@@ -1,14 +1,10 @@
 import { useEffect, useState } from 'react'
 
-import { CartActions, ProductsInfo, useCart } from '../contexts/CartProvider'
+import { CartActions, useCart } from '../contexts/CartProvider'
 import * as S from '../styles/Feed.styles'
 import { Products } from '../types/Products'
 import CardSkeleton from './CardSkeleton'
 import ProductCard from './ProductCard'
-
-type Lista = {
-  listadeProdutos: Products[]
-}
 
 function Feed() {
   const { state, dispatch } = useCart()

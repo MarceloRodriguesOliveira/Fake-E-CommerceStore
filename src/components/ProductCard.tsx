@@ -1,7 +1,7 @@
 import { BsFillCartCheckFill, BsFillCartPlusFill } from 'react-icons/bs'
 import Skeleton from 'react-loading-skeleton'
 
-import { ProductsInfo, useCart } from '../contexts/CartProvider'
+import { useCart } from '../contexts/CartProvider'
 import * as S from '../styles/Feed.styles'
 import { Products } from '../types/Products'
 

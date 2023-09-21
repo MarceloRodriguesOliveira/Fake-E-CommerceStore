@@ -1,8 +1,11 @@
 import 'react-loading-skeleton/dist/skeleton.css'
 import '../App.css'
+type CardsLength = {
+  cards: number
+}
 
 import Skeleton from 'react-loading-skeleton'
-function CardSkeleton({ cards }) {
+function CardSkeleton({ cards }: CardsLength) {
   return Array(cards)
     .fill(0)
     .map((item, index) => (

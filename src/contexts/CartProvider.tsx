@@ -66,7 +66,6 @@ const cartUpdate = (state: State, action: Action) => {
   switch (action.type) {
     case CartActions.addNewProduct: {
       const { id, title, price, description, category, image } = action.payload
-      console.log(action.payload)
 
       const itemExists = state.productsList.find((item) => item.id === id)
 
@@ -102,7 +101,7 @@ const cartUpdate = (state: State, action: Action) => {
       const { id } = action.payload
 
       const filteredCart = state.productsList.filter((produto) => produto.id !== id)
-      console.log(filteredCart)
+
       state.productsList = [...filteredCart]
 
       state.totalPrice = state.productsList.reduce((prev, products) => {
@@ -113,8 +112,6 @@ const cartUpdate = (state: State, action: Action) => {
     }
     case CartActions.addQuantities: {
       const { newQty, id } = action.payload
-      console.log(newQty)
-      console.log(state.totalPrice)
 
       const index = state.productsList.findIndex((item) => {
         return item.id === id
@@ -130,9 +127,7 @@ const cartUpdate = (state: State, action: Action) => {
         return prev + products.qty * products.price
       }, 0)
 
-      const Subtotal = newQty * state.productsList[index].price
-
-      console.log(Subtotal)
+      // const Subtotal = newQty * state.productsList[index].price
 
       return { ...state, productList: [...state.productsList] }
     }
