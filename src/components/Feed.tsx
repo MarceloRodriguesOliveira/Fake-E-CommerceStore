@@ -36,7 +36,7 @@ function Feed() {
 
   return (
     <S.Container>
-      {loading && <CardSkeleton cards={20} />}
+      {loading && <CardSkeleton />}
 
       {lista.map((item, index) => (
         <S.Card key={index}>
