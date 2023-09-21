@@ -1,0 +1,69 @@
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-skeleton{
+  border: 1px solid #eee;
+  /* height: fit-content; */
+
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.thumb{
+  width: 100%;
+  
+}
+
+.details{
+  /* border: 1px solid red; */
+  /* padding-top: 5px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  height: 100%;
+
+}
+
+.name{
+   /* display: inline-block; */
+   padding-top: 5px;
+   /* display: flex; */
+   height: 100%;
+   /* place-items: center;
+   text-align: justify; */
+}
+
+.price{
+ padding-top: 10px;
+  /* border: 1px solid red; */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+
+  
+}
+.truePrice{
+  flex: 2;
+  
+
+}
+
+.button{
+  flex: 1;
+}
+
+
