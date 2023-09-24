@@ -9,6 +9,9 @@ export const Menu = styled.nav`
   background-color: #131921;
 
   min-height: 60px;
+
+  position: sticky;
+  top: 0;
 `
 
 export const Logo = styled.div`

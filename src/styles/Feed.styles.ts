@@ -63,7 +63,6 @@ export const ProductName = styled.div`
 `
 
 export const ProductPrice = styled.div`
-  /* height: 100%; */
   padding-top: 10px;
 
   display: flex;
